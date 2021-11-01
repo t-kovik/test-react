@@ -1,0 +1,39 @@
+@import "./src/colors";
+
+  .pielist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.btn {
+  position: relative;
+  transition: all .3s ease-in-out;
+
+  .btnText {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: color .3s ease-in-out;
+  }
+
+  svg use {
+    transition: color .3s ease-in-out;
+  }
+
+  &:hover {
+    span, svg use {
+      color:$red7E;
+    }
+  }
+}

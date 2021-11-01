@@ -1,0 +1,44 @@
+@import "src/colors";
+
+.btn {
+  padding: 14px 16px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease-in-out;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  svg use {
+    color: rgba(0, 0, 0, 0.54);
+    transition: color .3s ease-in-out;
+  }
+
+  &:not(:last-child) {
+    margin-right: 58px;
+  }
+
+  span {
+    display: block;
+    color: $black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+
+  &:hover, &:active, &:focus {
+    @media all and (min-width: 1024px) {
+      background: rgba(0, 0, 0, 0.04);
+      border-bottom: 2px solid $redC9;
+
+      svg use {
+        color: $redC9;
+      }
+    }
+  }
+}
+
+

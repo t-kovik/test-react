@@ -1,0 +1,11 @@
+.pie {
+  width: 535px;
+
+  @media (max-width: 576px) {
+    width: 300px;
+  }
+}
+
+.hide:nth-child(-n+2) {
+    display: none;
+}

@@ -1,0 +1,16 @@
+@import "src/colors";
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  line-height: 45px;
+  color: $redC9;
+
+  span {
+    color: $red7E;
+  }
+}
+
+.icon {
+  margin-left: 5px;
+  margin-bottom: 15px;
+}

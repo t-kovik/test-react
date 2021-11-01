@@ -1,0 +1,11 @@
+@import "../../colors";
+.header {
+  background: $grayE5;
+  @media all and (min-width: 1024px) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 23px;
+  }
+}
