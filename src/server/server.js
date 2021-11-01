@@ -1,12 +1,13 @@
 import {App} from '../App'
-import compression from 'compression';
-import helmet from 'helmet';
 
 const express = require('express');
 import ReactDOM from 'react-dom/server';
 import { indexTemplate} from "./indexTemplate";
+import compression from 'compression';
+import helmet from 'helmet';
 
 const app = express();
+
 const IS_DEV = process.env.NODE_ENV !== 'production';
 
 app.use('/static', express.static('./dist/client'));
